@@ -1,0 +1,59 @@
+html, body {width: 1200px; height: 700px;}
+
+header {width:100%; height: 100px; display: flex;}
+  .logobox, .footerlogo {width:300px; height : 100px; aspect-ratio: 1/1; cursor: pointer;}
+    .logobox img, .footerlogo img{width: 300px; margin-top: 15px;}
+
+  .menubox {font-size:22px; z-index: 3;}
+
+  .menubox {width: 900px; height: 100px; display: flex;text-align: center;
+    justify-content: flex-end}
+    .menubox ul {width: 150px; display: flex; justify-content: flex-end; 
+    background-color: rgba(255,255,255,0.6);}
+      .menubox ul li{display : flex; flex-direction: column; margin-top: 10px;}
+        .menubox ul li ul {display : flex; flex-direction: column; padding: 0}
+          .selected {background-color : rgba(0,0,0,0.3)}
+
+  .slidebox, .slidelist {width:100%; height : 300px; position: relative; overflow: hidden; z-index: 2;}
+    .slidelist img {width: 100%; height: 100%; position: absolute;}
+    .slidelist img:not(:first-child) {top: 300px;}
+
+main {width:100%; height: 500px;}
+
+h2, h3, h4 {margin: 0; padding: 0; user-select: none;}
+
+  .slidebox {width:100%; height:300px;}
+  .ngbox {width:100%; height:200px; display: flex; padding: 0; margin: 0; user-select: none;}
+    .notice {width:450px; height:200px; padding: 0; margin: 0;}
+    table tr td {cursor: pointer;}
+
+    table {width:436px; height: 160px;margin-left: 4px;}
+    table tr td {cursor: pointer;}
+    table th {text-align: center;}
+    table, th, td {border-bottom: dotted 1px black; border-collapse: collapse;margin-top: 10px; font-size: 14px;}
+    
+    .gallary {width:450px; height:200px; display: flex; text-wrap: nowrap;}
+    .gallbox {width:100%; height: 165px; position: relative; bottom:-30px; display: flex; gap:10px;}
+    .gallbox img {width:135px; height:140px; position: relative; right:45px}
+
+    .baro {width:300px; height:200px; overflow: hidden;}
+      .baro img {width: 130%; height: 130%;object-fit: cover;  transform: translate(-10%, -15%);}
+      .baro h2, .baro h3, .baro h4 {position: absolute;}
+      .baro h3 {width: 200px; color: white; top: 415px; font-size:18px}
+      .baro h2 {color:white;background-color: rgba(0,0,0,0.7); width: 180px; height: 30px; font-size:18px;
+        text-align: center; padding-top: 5px; margin-top: -235px;}
+      .baro h4 {background-color: black; color:white; text-align: center;
+      width:80px; height: 26px; margin-left:115px; margin-top : -195px; padding-top: 4px; border-radius: 40%; cursor: pointer;}
+
+footer {width:100%; height: 100px; display: flex;background-color: rgb(45, 45, 45);
+  user-select:none}
+
+.footerlogo {width: 300px; height: 100%;margin-left: 50px;}
+.footermain {width: 800px; height: 100%;margin-top: 20px; color:white; font-size: 14px; margin-right: 10px; margin-left: 30px;}
+.footerend {width: 100px; height: 100%; text-align: end; padding: 0; margin: 15px 30px 0 0; text-align:left;}
+.footerend a, a:visited {text-decoration: none; color:white; font-size:12px}
+.footerend img {width: 20%; border-radius: 50%;}
+
+ul, li {cursor: pointer; user-select: none;}
+
+.modal{position:absolute; display:none; bottom:20%;left:5%;width:500px;height:350px; background-color: white; border: solid 2px black; box-shadow:2px 2px 2px 2px rgb(0, 0, 0, 0.5); font-size: 13px; flex-direction: column;padding: 0; margin: 0; z-index: 10;}
